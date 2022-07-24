@@ -1,0 +1,14 @@
+Index: .streamlit/secrets.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.streamlit/secrets.toml b/.streamlit/secrets.toml
+new file mode 100644
+--- /dev/null	(date 1658677049893)
++++ b/.streamlit/secrets.toml	(date 1658677049893)
+@@ -0,0 +1,3 @@
++[mongo]
++host = "localhost"
++port = 27017
+\ No newline at end of file
