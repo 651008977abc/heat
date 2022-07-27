@@ -8,7 +8,7 @@ import time
 @st.experimental_singleton
 def init_connection():
     time.sleep(2)
-    return pymongo.MongoClient(**st.secrets["mongo"])
+    return pymongo.MongoClient(**st.secrets["mongo"],connect=False)
 
 client = init_connection()
 
