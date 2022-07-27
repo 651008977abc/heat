@@ -2,11 +2,12 @@
 
 import streamlit as st
 import pymongo
-
+import time
 # Initialize connection.
 # Uses st.experimental_singleton to only run once.
 @st.experimental_singleton
 def init_connection():
+    time.sleep(2)
     return pymongo.MongoClient(**st.secrets["mongo"])
 
 client = init_connection()
